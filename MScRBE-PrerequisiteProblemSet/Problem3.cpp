@@ -1,5 +1,7 @@
 #include <iostream>
 #include <stack>
+#include <iterator>
+#include <map>
 
 using namespace std;
 
@@ -36,10 +38,25 @@ bool isValid(string s) {
     return validity;
 }
 
+double evaluate() {
+
+}
+
 int main() {
+
+    map<char, string> Operator;
+
+    Operator['+'] = "Add";
+    Operator['-'] = "Subtract";
+    Operator['/'] = "Divide";
+    Operator['*'] = "Multiply";
+    Operator['%'] = "Modulus";
+
     cout<<"Enter an expression within double quotes (\"\"): ";
     string s;
     getline(cin, s);
-    cout<<isValid(s);
+    if(isValid(s)) {
+
+    }
     return 0;
 }
