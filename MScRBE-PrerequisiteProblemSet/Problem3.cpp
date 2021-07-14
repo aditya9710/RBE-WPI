@@ -1,7 +1,4 @@
 #include <iostream>
-#include <stack>
-#include <iterator>
-#include <map>
 
 using namespace std;
 
