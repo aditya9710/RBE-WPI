@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
 
     kernel = Mat::ones(kernel_size, kernel_size, CV_32F )/ (float)(kernel_size*kernel_size);
 
-    filter2D(inputImage, boxOutput, ddepth , kernel, anchor, delta, BORDER_DEFAULT );
+    filter2D(inputImage, boxOutput, ddepth , kernel, anchor, delta, BORDER_DEFAULT);
 
     GaussianBlur(inputImage, gaussianOutput, Size(0,0), sigmaX, sigmaY);
 
